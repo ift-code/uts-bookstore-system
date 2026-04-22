@@ -42,28 +42,6 @@ S5| Sabian | Deque — "OrderDeque.java"
 
 📦 Struktur Project
 
-bookstore-system/
-├── shared/
-│   ├── Book.java
-│   ├── Customer.java
-│   └── Transaction.java
-│
-├── S1/
-│   └── BookCatalog.java          ← Dynamic Array
-│
-├── S2/
-│   └── CustomerServiceQueue.java ← Queue (Linked Nodes)
-│
-├── S3/
-│   └── SalesUndoStack.java       ← Stack (Linked Nodes)
-│
-├── S4/
-│   └── GenreIndex.java           ← HashMap (Array + Chaining)
-│
-├── S5/
-│   └── OrderDeque.java           ← Deque (Doubly Linked List)
-│
-└── Main.java
 
 ---
 
@@ -134,18 +112,3 @@ Data bisa ditambahkan atau dihapus dari depan maupun belakang.
 📌 Catatan
 
 Project ini dibuat untuk memenuhi tugas UTS dan sebagai latihan implementasi struktur data serta OOP dalam Java.
-
-group[N]-[appname]/
-├── README.md ← group overview; each student adds their section
-├── shared/
-│ ├── [Entity1].java ← model class (developed together in Week 1)
-│ ├── [Entity2].java
-│ └── [Entity3].java
-├── student1/
-│ ├── [Module1].java ← data structure / algorithm module
-│ └── [Module1]Demo.java ← main class to demonstrate the module
-├── student2/
-│ ├── [Module2].java
-│ └── [Module2]Demo.java
-├── student3/ (same pattern)
-└── student4/ (4-person groups only
