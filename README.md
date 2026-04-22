@@ -47,7 +47,7 @@ Mencari buku berdasarkan judul (findByTitle)
 Menampilkan seluruh data buku (listAll)
 Menghitung jumlah data (size)
 Mengecek apakah data kosong (isEmpty)
----
+
 🔹 S2 – CustomerServiceQueue (Queue - Linked Nodes)
 Mengelola antrian customer menggunakan struktur data queue berbasis linked list.
 Fitur:
@@ -57,7 +57,7 @@ Melihat antrian terdepan (peek)
 Mengecek apakah antrian kosong (isEmpty)
 Menghitung jumlah antrian (size)
 Menampilkan seluruh antrian (displayQueue)
----
+
 🔹 S3 – SalesUndoStack (Stack - Linked Nodes)
 Mengelola riwayat transaksi menggunakan struktur data stack berbasis linked list.
 Fitur:
@@ -67,7 +67,7 @@ Melihat data teratas (peek)
 Mengecek apakah stack kosong (isEmpty)
 Menghitung jumlah data (size)
 Menampilkan riwayat (displayHistory)
----
+
 🔹 S4 – GenreIndex (HashMap - Array + Chaining)
 Mengelola kategori buku berdasarkan genre menggunakan struktur data HashMap.
 Fitur:
@@ -76,7 +76,7 @@ Mengambil daftar buku dalam genre (getBooksInGenre)
 Menghapus genre (removeGenre)
 Menampilkan semua genre (listGenres)
 Menghitung jumlah genre (size)
----
+
 🔹 S5 – OrderDeque (Deque - Doubly Linked List)
 Mengelola data pesanan menggunakan struktur data deque berbasis doubly linked list.
 Fitur:
