@@ -15,32 +15,28 @@ Project ini juga bertujuan untuk menerapkan konsep Object-Oriented Programming (
 
 🎯 Kegunaan Aplikasi
 
-Fitur| Deskripsi
-
-Manajemen Buku| Mengelola data buku menggunakan Dynamic Array
-
-Antrian Customer| Mengatur antrian pelanggan menggunakan Queue (FIFO)
-
-Riwayat Transaksi| Menyimpan histori transaksi menggunakan Stack (LIFO)
-
-Kategori Buku| Mengelompokkan buku berdasarkan genre menggunakan HashMap
-
-Manajemen Order| Mengelola pesanan menggunakan Deque
+Fitur | Deskripsi
+Manajemen Buku | Mengelola data buku menggunakan Dynamic Array
+Antrian Customer | Mengatur antrian pelanggan menggunakan Queue (FIFO)
+Riwayat Transaksi | Menyimpan histori transaksi menggunakan Stack (LIFO)
+Kategori Buku | Mengelompokkan buku berdasarkan genre menggunakan HashMap
+Manajemen Order | Mengelola pesanan menggunakan Deque
 
 ---
 
 👥 Anggota Kelompok
 
-No| Nama| Role (UTS)
-S1| Ibnu| Dynamic Array — "BookCatalog.java"
+No | Nama | Role (UTS)
 
-S2| Maulana| Queue — "CustomerServiceQueue.java"
+S1 | Ibnu | Dynamic Array — "BookCatalog.java"
 
-S3| Wafiq| Stack — "SalesUndoStack.java"
+S2| Maulana | Queue — "CustomerServiceQueue.java"
 
-S4| Rishy| HashMap — "GenreIndex.java"
+S3| Wafiq | Stack — "SalesUndoStack.java"
 
-S5| Sabian| Deque — "OrderDeque.java"
+S4| Rishy | HashMap — "GenreIndex.java"
+
+S5| Sabian | Deque — "OrderDeque.java"
 
 ---
 
