@@ -27,7 +27,7 @@ Manajemen Order | Mengelola pesanan menggunakan Deque
 👥 Anggota Kelompok
 
 No | Nama | Role (UTS)
-|:---:|---|---|---|
+
 S1 | Ibnu Fatih Hidayat | Dynamic Array — "BookCatalog.java"
 
 S2 | Maulana Septian | Queue — "CustomerServiceQueue.java"
