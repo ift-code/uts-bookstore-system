@@ -27,35 +27,21 @@ Manajemen Order | Mengelola pesanan menggunakan Deque
 👥 Anggota Kelompok
 
 No | Nama | Role (UTS)
+|:---:|---|---|---|
+S1 | Ibnu Fatih Hidayat | Dynamic Array — "BookCatalog.java"
 
-S1 | Ibnu | Dynamic Array — "BookCatalog.java"
+S2 | Maulana Septian | Queue — "CustomerServiceQueue.java"
 
-S2| Maulana | Queue — "CustomerServiceQueue.java"
+S3 | Muhammad Wafiq Robbani | Stack — "SalesUndoStack.java"
 
-S3| Wafiq | Stack — "SalesUndoStack.java"
+S4 | Rishy Khoerunnisa | HashMap — "GenreIndex.java"
 
-S4| Rishy | HashMap — "GenreIndex.java"
-
-S5| Sabian | Deque — "OrderDeque.java"
+S5 | Sabian Mugis Pratama | Deque — "OrderDeque.java"
 
 ---
 
 📦 Struktur Project
 
-group[N]-[appname]/
-├── README.md ← group overview; each student adds their section
-├── shared/
-│ ├── [Entity1].java ← model class (developed together in Week 1)
-│ ├── [Entity2].java
-│ └── [Entity3].java
-├── student1/
-│ ├── [Module1].java ← data structure / algorithm module
-│ └── [Module1]Demo.java ← main class to demonstrate the module
-├── student2/
-│ ├── [Module2].java
-│ └── [Module2]Demo.java
-├── student3/ (same pattern)
-└── student4/ (4-person groups only
 
 ---
 
