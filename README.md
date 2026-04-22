@@ -1,101 +1,119 @@
-📚 Bookstore System (UTS)
+📚 Bookstore Inventory & Sales System
 
-📖 Tentang Aplikasi
+---
 
-Aplikasi ini merupakan sistem sederhana untuk mengelola toko buku, yang mencakup data buku, pelanggan, dan transaksi.
-Dikembangkan menggunakan bahasa Java dengan pendekatan Object-Oriented Programming (OOP) serta penerapan struktur data.
+📌 Tentang Aplikasi
+
+Bookstore Inventory & Sales System adalah aplikasi berbasis console yang dikembangkan menggunakan Java.
+Aplikasi ini digunakan untuk mengelola data buku, pelanggan, dan transaksi penjualan dalam sebuah toko buku.
+
+Sistem ini mensimulasikan proses nyata seperti pengelolaan stok buku, pelayanan pelanggan, hingga pencatatan transaksi penjualan.
+
+Project ini juga bertujuan untuk menerapkan konsep Object-Oriented Programming (OOP) serta berbagai struktur data.
 
 ---
 
 🎯 Kegunaan Aplikasi
 
-- Mengelola data buku (tambah, hapus, cari)
-- Menyimpan data pelanggan
-- Mencatat transaksi pembelian
-- Mengimplementasikan struktur data Dynamic Array (ArrayList)
+Fitur| Deskripsi
+Manajemen Buku| Mengelola data buku menggunakan Dynamic Array
+Antrian Customer| Mengatur antrian pelanggan menggunakan Queue (FIFO)
+Riwayat Transaksi| Menyimpan histori transaksi menggunakan Stack (LIFO)
+Kategori Buku| Mengelompokkan buku berdasarkan genre menggunakan HashMap
+Manajemen Order| Mengelola pesanan menggunakan Deque
 
 ---
 
 👥 Anggota Kelompok
 
-- S1 – Ibnu (BookCatalog - Dynamic Array)
-- S2 – (isi nama & tugas)
-- S3 – (isi nama & tugas)
-- S4 – (isi nama & tugas)
-- S5 – (isi nama & tugas)
+No| Nama| Role (UTS)
+S1| Ibnu| Dynamic Array — "BookCatalog.java"
+S2| Maulana| Queue — "CustomerServiceQueue.java"
+S3| Wafiq| Stack — "SalesUndoStack.java"
+S4| Rishy| HashMap — "GenreIndex.java"
+S5| Sabian| Deque — "OrderDeque.java"
 
 ---
 
-🧩 Struktur Project
+📦 Struktur Project
 
-src/
- ├── model/      → Data class (Book, Customer, Transaction)
- ├── module/     → Logic program (BookCatalog, dll)
- └── main/       → Testing (Main.java)
+bookstore-system/
+├── shared/
+│   ├── Book.java
+│   ├── Customer.java
+│   └── Transaction.java
+│
+├── S1/
+│   └── BookCatalog.java          ← Dynamic Array
+│
+├── S2/
+│   └── CustomerServiceQueue.java ← Queue (Linked Nodes)
+│
+├── S3/
+│   └── SalesUndoStack.java       ← Stack (Linked Nodes)
+│
+├── S4/
+│   └── GenreIndex.java           ← HashMap (Array + Chaining)
+│
+├── S5/
+│   └── OrderDeque.java           ← Deque (Doubly Linked List)
+│
+└── Main.java
 
 ---
 
-⚙️ Penjelasan Modul
+🧩 Penjelasan Modul Per Individu
 
-🔹 S1 – BookCatalog (Dynamic Array)
-Mengelola data buku menggunakan struktur data dynamic array (ArrayList).
-Fitur:
-Menambahkan buku (addBook)
-Menghapus buku berdasarkan ISBN (removeBook)
-Mencari buku berdasarkan ISBN (findByIsbn)
-Mencari buku berdasarkan judul (findByTitle)
-Menampilkan seluruh data buku (listAll)
-Menghitung jumlah data (size)
-Mengecek apakah data kosong (isEmpty)
+👤 S1 — BookCatalog.java (Dynamic Array)
 
-🔹 S2 – CustomerServiceQueue (Queue - Linked Nodes)
-Mengelola antrian customer menggunakan struktur data queue berbasis linked list.
-Fitur:
-Menambahkan ke antrian (enqueue)
-Menghapus dari antrian (dequeue)
-Melihat antrian terdepan (peek)
-Mengecek apakah antrian kosong (isEmpty)
-Menghitung jumlah antrian (size)
-Menampilkan seluruh antrian (displayQueue)
+Modul ini mengelola data buku menggunakan struktur data Dynamic Array (ArrayList).
+Digunakan untuk menyimpan dan memanipulasi data buku secara fleksibel.
 
-🔹 S3 – SalesUndoStack (Stack - Linked Nodes)
-Mengelola riwayat transaksi menggunakan struktur data stack berbasis linked list.
-Fitur:
-Menambahkan data ke stack (push)
-Menghapus data terakhir (pop)
-Melihat data teratas (peek)
-Mengecek apakah stack kosong (isEmpty)
-Menghitung jumlah data (size)
-Menampilkan riwayat (displayHistory)
+Fungsi utama:
 
-🔹 S4 – GenreIndex (HashMap - Array + Chaining)
-Mengelola kategori buku berdasarkan genre menggunakan struktur data HashMap.
-Fitur:
-Menambahkan buku ke genre (addBook)
-Mengambil daftar buku dalam genre (getBooksInGenre)
-Menghapus genre (removeGenre)
-Menampilkan semua genre (listGenres)
-Menghitung jumlah genre (size)
+- addBook → menambahkan buku
+- removeBook → menghapus buku berdasarkan ISBN
+- findByIsbn → mencari buku berdasarkan ISBN
+- findByTitle → mencari buku berdasarkan judul
+- listAll → menampilkan seluruh data buku
+- size → menghitung jumlah data
+- isEmpty → mengecek apakah kosong
 
-🔹 S5 – OrderDeque (Deque - Doubly Linked List)
-Mengelola data pesanan menggunakan struktur data deque berbasis doubly linked list.
-Fitur:
-Menambahkan data di depan (addFront)
-Menambahkan data di belakang (addRear)
-Menghapus dari depan (removeFront)
-Menghapus dari belakang (removeRear)
-Melihat data depan (peekFront)
-Melihat data belakang (peekRear)
-Mengecek apakah kosong (isEmpty)
-Menghitung jumlah data (size)
-Menampilkan seluruh data (display)
+---
 
+👤 S2 — CustomerServiceQueue.java (Queue - Linked Nodes)
+
+Modul ini mengelola antrian pelanggan menggunakan konsep Queue (FIFO).
+Customer yang datang lebih dulu akan dilayani lebih dulu.
+
+---
+
+👤 S3 — SalesUndoStack.java (Stack - Linked Nodes)
+
+Modul ini menyimpan riwayat transaksi menggunakan Stack (LIFO).
+Transaksi terakhir dapat di-undo terlebih dahulu.
+
+---
+
+👤 S4 — GenreIndex.java (HashMap - Array + Chaining)
+
+Modul ini mengelompokkan buku berdasarkan genre menggunakan HashMap.
+Mempermudah pencarian buku berdasarkan kategori.
+
+---
+
+👤 S5 — OrderDeque.java (Deque - Doubly Linked List)
+
+Modul ini mengelola data pesanan menggunakan Deque.
+Data bisa ditambahkan atau dihapus dari depan maupun belakang.
+
+---
 
 🎥 Video Deliverables
 
-- Video penjelasan sistem (overview aplikasi)
+- Video penjelasan sistem
 - Video penjelasan modul masing-masing anggota
-- Video live coding implementasi
+- Video live coding
 - Video Git workflow (commit & push)
 
 ---
@@ -103,11 +121,11 @@ Menampilkan seluruh data (display)
 🚀 Cara Menjalankan
 
 1. Clone repository
-2. Buka project di VS Code
-3. Jalankan file "Main.java"
+2. Buka di Visual Studio Code
+3. Jalankan "Main.java"
 
 ---
 
 📌 Catatan
 
-Project ini dibuat untuk memenuhi tugas UTS dan berfokus pada pemahaman konsep Object-Oriented Programming (OOP) serta struktur data.
+Project ini dibuat untuk memenuhi tugas UTS dan sebagai latihan implementasi struktur data serta OOP dalam Java.
