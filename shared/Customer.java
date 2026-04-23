@@ -1,1 +1,5 @@
-package shared; 
+package shared;
+
+public class Customer {
+    
+}
