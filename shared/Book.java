@@ -9,7 +9,7 @@ public class Book {
     private int year;
 
 //Constructor
-public Book(String,isbn, String title, String author, double price, int stock, int year){
+public Book(String isbn, String title, String author, double price, int stock, int year){
     this.isbn = isbn;
     this.title = title;
     this.author = author;
