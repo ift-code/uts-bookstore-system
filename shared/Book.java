@@ -6,14 +6,16 @@ public class Book {
     private String author;
     private double price;
     private int stock;
+    private int year;
 
 //Constructor
-public Book(String,isbn, String title, String author, double price, int stock){
+public Book(String,isbn, String title, String author, double price, int stock, int year){
     this.isbn = isbn;
     this.title = title;
     this.author = author;
     this.price = price;
     this.stock = stock;
+    this.year = year;
 }
 //Getter
 public String getIsbn(){
@@ -25,11 +27,14 @@ public String getTitle(){
 public String getAuthor(){
     return author;
 }
-public double getHarga(){
+public double getPrice(){
     return price;
 }
 public int getStock(){
     return stock;
+}
+public int getYear(){
+
 }
 //Method untuk menampilkan data buku
 @Override
