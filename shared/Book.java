@@ -15,6 +15,10 @@ public class Book {
 
     @Override
     public String toString() {
+<<<<<<< HEAD
         return title + " - " + author + " | (Stock: " + stock + ");
+=======
+        return "[BOOK] " + title + " | Author: " + author + " | Price: " + price;
+>>>>>>> feature-update-book
     }
 }
