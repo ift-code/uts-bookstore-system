@@ -11,36 +11,50 @@ public class BookCatalog {
         size = 0;
     }
     public void addBook(Book book) {
-        if (si89ze == books.lenghth) {
+        if (size == books.length) { 
             resize();
         }
         books[size++] = book;
     }
     private void resize() {
-        Book[] newBooks = newBook[books.length * 2];
+        Book[] newBooks = new Book[books.length * 2];
         for (int i = 0; i < size; i++) {     
         }
-        books = newBooks
+        books = newBooks;
     }
     public Book findByIsbn(String isbn) {
         for (int i = 0; i < size; i++) {
-            if
-            (books[i].getIsbn().equals(isbn)) {
-                return books[i];
+            if (books[i] != null) {
+                if (books[i].getIsbn().equals(isbn)) {
+                }
             }
         }
         return null;
     }
     public void findByTitle(String title) {
         for (int i = 0; i < size; i++) {
-            if(books[i].getTitle().toLowerCase().contains(title.toLowerCase())) {
+            if (books[i] != null) {
+
+if(books[i].getTitle().toLowerCase().contains(title.toLowerCase())) {
+
+}
+{
+            }
                 System.out.println("Found:" + books[i]);
             }
         }
     }
     public boolean removeBook(String isbn) {
         for (int i = 0; i < size; i++) {
+            if (books[i] != null) {
+                if
             (books[i].getIsbn().equals(isbn)) {
+
+            }
+
+            }
+        
+             {
                 for (int j = i; j < size - 1; j++) {
                     books[j] = books[j + 1];
                 }
@@ -53,7 +67,9 @@ public class BookCatalog {
     public void listAll() {
         System.out.println("=== BookCatalog ===");
         for (int i = 0; i < size; i++) {
-            System.out.println(books[i]);
+            if (books[i] != null) {
+
+             System.out.println(books[i]);
         }
     }
     public int size() {

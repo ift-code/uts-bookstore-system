@@ -34,7 +34,7 @@ public int getStock(){
     return stock;
 }
 public int getYear(){
-
+    return year;
 }
 //Method untuk menampilkan data buku
 @Override
