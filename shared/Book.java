@@ -2,38 +2,38 @@ package shared;
 
 public class Book {
     private String isbn;
-    private String judul;
-    private String penulis;
-    private double harga;
-    private int stok;
+    private String title;
+    private String author;
+    private double price;
+    private int stock;
 
 //Constructor
-public Book(String,isbn, String judul, String penulis, double harga, int stok){
+public Book(String,isbn, String title, String author, double price, int stock){
     this.isbn = isbn;
-    this.judul = judul;
-    this.penulis = penulis;
-    this.harga = harga;
-    this.stok = stok;
+    this.title = title;
+    this.author = author;
+    this.price = price;
+    this.stock = stock;
 }
 //Getter
 public String getIsbn(){
     return Isbn;
 }
-public String getJudul(){
-    return judul;
+public String getTitle(){
+    return title;
 }
-public String getPenulis(){
-    return penulis;
+public String getAuthor(){
+    return author;
 }
 public double getHarga(){
-    return harga;
+    return price;
 }
-public int getStok(){
-    return stok;
+public int getStock(){
+    return stock;
 }
 //Method untuk menampilkan data buku
 @Override
 public String toString(){
-    return "[" + isbn + "] " + judul + " " + penulis + ", Rp" + harga + " (stok: " + stok + ")";
+    return "[" + isbn + "] " + title + " " + author + ", Rp" + price + " (stock: " + stock + ")";
 }
 }
