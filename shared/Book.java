@@ -19,7 +19,7 @@ public Book(String isbn, String title, String author, double price, int stock, i
 }
 //Getter
 public String getIsbn(){
-    return Isbn;
+    return isbn;
 }
 public String getTitle(){
     return title;
