@@ -36,6 +36,12 @@ public int getStock(){
 public int getYear(){
     return year;
 }
+
+//Setter
+public void setStock(int stock) {
+    this.stock = stock;
+}
+
 //Method untuk menampilkan data buku
 @Override
 public String toString(){
