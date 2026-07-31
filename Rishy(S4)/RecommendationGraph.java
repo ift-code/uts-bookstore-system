@@ -37,7 +37,7 @@ public class RecommendationGraph {
         System.arraycopy(vertices, 0, newVertices, 0, vertices.length);
         vertices = newVertices;
     }
-
+    
     // Menemukan index dari judul buku di dalam array vertex
     private int findVertexIndex(String title) {
         for (int i = 0; i < vertexCount; i++) {
