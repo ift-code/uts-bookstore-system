@@ -31,7 +31,7 @@ public class RecommendationGraph {
         vertexCount = 0;
     }
 
-    // Memperbesar kapasitas array jika penuh
+    
     private void resize() {
         Vertex[] newVertices = new Vertex[vertices.length * 2];
         System.arraycopy(vertices, 0, newVertices, 0, vertices.length);
