@@ -163,7 +163,7 @@ public class RecommendationGraph {
         int head = 0, tail = 0;
         int visitedCount = 0;
 
-        // Inisialisasi awal
+        
         queue[tail++] = startTitle;
         visited[visitedCount++] = startTitle;
 
